@@ -61,7 +61,7 @@ def send(event):
 
 baseWindow = Tk()
 baseWindow.title("The Sophisticated Bot")
-baseWindow.geometry("500x300")
+baseWindow.geometry("500x250")
 
 chatWindow = tks.ScrolledText(baseWindow, font="Arial")
 chatWindow.tag_configure('tag-left', justify='left')
@@ -81,9 +81,9 @@ baseWindow.bind('<Return>', send)
 
 userEntryBox = Text(baseWindow, bd=1, bg="white", width=38, font="Arial")
 
-chatWindow.place(x=1, y=1, height=270, width=500)
-userEntryBox.place(x=3, y=272, height=27)
-sendButton.place(x=430, y=270)
+chatWindow.place(x=1, y=1, height=200, width=500)
+userEntryBox.place(x=3, y=202, height=27)
+sendButton.place(x=430, y=200)
 
 model = pretrained_model.initialize_model()
 

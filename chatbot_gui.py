@@ -79,6 +79,7 @@ sendButton = Button(
 sendButton.bind("<Button-1>", send)
 baseWindow.bind('<Return>', send)
 
+#text box for user entry
 userEntryBox = Text(baseWindow, bd=1, bg="white", width=38, font="Arial")
 
 chatWindow.place(x=1, y=1, height=200, width=500)
